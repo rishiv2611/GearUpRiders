@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GearUpRiders - Ride Together, Explore India</title>
+  <!-- Bootstrap CSS via CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+
+  <!-- Bootstrap JS via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA4l6jTIx1t5rDZy2DEzLgAXzc5sh1AhUeU8hRswGJmCM8vVepcEvMOf+YOnR3s" crossorigin="anonymous"></script>
+
+  <style>
+    .hero {
+      background: url('https://wallpapercave.com/wp/wp2691126.jpg') center/cover no-repeat;
+      color: white;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GearUpRiders</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavContent" aria-controls="navbarNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#groups">groups</a></li>
+          <li class="nav-item"><a class="nav-link" href="#join">Join Us</a></li>
+        </ul>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Profile
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Welcome to GearUpRiders!</strong> Check out our new features including tooltips, popovers, and typeahead.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <div class="hero text-center">
+    <div>
+      <h1 class="display-4">Welcome to GearUpRiders</h1>
+      <p class="lead">Team up. Ride out. Discover India's iconic biking destinations.</p>
+    </div>
+  </div>
+
+
+  <nav aria-label="breadcrumb" class="my-3 container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Explore</li>
+    </ol>
+  </nav>
+
+
+  <div class="container" id="destinations">
+    <h2 class="mb-4">Popular Riding Destinations <span class="badge bg-success">Hot</span></h2>
+
+    <div class="mb-3">
+      <label for="searchDestinations" class="form-label">Search Destinations</label>
+      <input type="search" class="form-control" id="searchDestinations" placeholder="Type to search destinations...">
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="http://media.cntraveller.in/wp-content/uploads/2014/01/lehladakh1-1086561823_0.jpg"
+            class="card-img-top" alt="Leh-Ladakh">
+          <div class="card-body">
+            <h5 class="card-title" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" title="Leh-Ladakh" data-bs-content="The ultimate Himalayan adventure with snow, deserts, and winding roads.">Leh-Ladakh</h5>
+            <p class="card-text">The ultimate Himalayan adventure. Snow, deserts, and winding roads.</p>
+            <a href="#join" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Join the Leh-Ladakh ride!">Join Ride</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img
+            src="https://images.hindustantimes.com/auto/img/2022/07/04/1600x900/Goa_Karnataka_1656908868048_1656908874544.jpg"
+            class="card-img-top" alt="Goa">
+          <div class="card-body">
+            <h5 class="card-title" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" title="Goa Coastal Ride" data-bs-content="Sun, sand, and the perfect coastal breeze. A fun tropical ride!">Goa Coastal Ride</h5>
+            <p class="card-text">Sun, sand, and the perfect coastal breeze. A fun tropical ride!</p>
+            <a href="#join" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Join the Goa Coastal ride!">Join Ride</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://wallpapercave.com/wp/wp5396552.jpg" class="card-img-top" alt="Rajasthan">
+          <div class="card-body">
+            <h5 class="card-title">Rajasthan Desert Ride</h5>
+            <p class="card-text">Ride through the Thar Desert and explore royal heritage.</p>
+            <a href="#join" class="btn btn-primary">Join Ride</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://devilonwheels.com/wp-content/uploads/2019/03/Manali-Leh-Highway-Status-2019-20-1.jpg"
+            class="card-img-top" alt="Manali">
+          <div class="card-body">
+            <h5 class="card-title">Manali Ride</h5>
+            <p class="card-text">Snow-capped peaks and pine forests. A true Himalayan thrill!</p>
+            <a href="#join" class="btn btn-primary">Join Ride</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://farm2.staticflickr.com/1760/27795827147_b4b6077b51_b.jpg" class="card-img-top"
+            alt="Meghalaya">
+          <div class="card-body">
+            <h5 class="card-title">Meghalaya Monsoon Trail</h5>
+            <p class="card-text">Ride through clouds and waterfalls in the northeast hills.</p>
+            <a href="#join" class="btn btn-primary">Join Ride</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://blogs.revv.co.in/blogs/wp-content/uploads/2020/12/Ooty.png" class="card-img-top" alt="Ooty">
+          <div class="card-body">
+            <h5 class="card-title">Ooty Hills Ride</h5>
+            <p class="card-text">Tea gardens, misty roads and curves through the Nilgiris.</p>
+            <a href="#join" class="btn btn-primary">Join Ride</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Wrapper -->
+  <div class="d-flex justify-content-center align-items-center carousel-wrapper">
+    <!-- Carousel Section -->
+    <div id="rideCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#rideCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#rideCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#rideCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://wallpaperaccess.com/full/526697.jpg" class="d-block w-100 small-carousel-img"
+            alt="Biking Adventure 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Feel the Freedom</h5>
+            <p>Ride through open roads and beautiful landscapes.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/736x/a0/fe/ee/a0feee2369974db8b56a6728ebc0ffef.jpg"
+            class="d-block w-100 small-carousel-img" alt="Biking Adventure 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mountain Escapes</h5>
+            <p>Conquer every twist and turn of the Himalayas.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://mountain-bike-morocco.com/wp-content/uploads/2023/11/gravel-adventure-bike-morocco-jpg.webp"
+            class="d-block w-100 small-carousel-img" alt="Biking Adventure 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sunset Rides</h5>
+            <p>Unwind with golden skies and group camaraderie.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#rideCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#rideCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container my-5" id="groups">
+    <h2 class="mb-4">Riders Group <span class="badge bg-info text-dark">New</span></h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://www.adventureriders.in/images/adventure_riders_logo.png" class="card-img-top"
+            alt="Daring Devil">
+          <div class="card-body">
+            <h5 class="card-title" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" title="Adventure Riders" data-bs-content="Fearless riders conquering extreme routes with thrill and passion.">Adventure Riders</h5>
+            <p class="card-text">Fearless riders conquering extreme routes with thrill and passion.</p>
+            <a href="#join" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Join Adventure Riders club!">Join Club</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://logos-world.net/wp-content/uploads/2023/08/Professional-Bull-Riders-PBR-Emblem.png"
+            class="card-img-top" alt="Free Souls">
+          <div class="card-body">
+            <h5 class="card-title" tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" title="Free Souls" data-bs-content="Freedom-loving riders journeying without limits or boundaries.">Free Souls</h5>
+            <p class="card-text">Freedom-loving riders journeying without limits or boundaries.</p>
+            <a href="#join" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Join Free Souls club!">Join Club</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img
+            src="https://img.freepik.com/premium-vector/motorcycle-rider-theme-t-shirt-label-design_714329-22.jpg?w=2000"
+            class="card-img-top" alt="Hot Wheels">
+          <div class="card-body">
+            <h5 class="card-title">Hot Wheels</h5>
+            <p class="card-text">Speed lovers with roaring engines and smoking tires everywhere.</p>
+            <a href="#join" class="btn btn-primary">Join Club</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://clipground.com/images/rider-logo-clipart.png" class="card-img-top" alt="Wheelie Club">
+          <div class="card-body">
+            <h5 class="card-title">Wheelie Club</h5>
+            <p class="card-text">Stunt masters who ride the edge with balance and skill.</p>
+            <a href="#join" class="btn btn-primary">Join Club</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="Destination pages">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  </div>
+
+  <div class="container my-5">
+    <h2>Upcoming Group Rides <span class="badge bg-warning text-dark">New</span></h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Riders</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>palgoan</td>
+            <td>17 june 2025</td>
+            <td>19</td>
+            <td><span class="badge bg-success">closed</span></td>
+          </tr>
+          <tr>
+            <td>Leh-Ladakh</td>
+            <td>12 May 2025</td>
+            <td>25</td>
+            <td><span class="badge bg-success">Open</span></td>
+          </tr>
+          <tr>
+            <td>Goa</td>
+            <td>1 June 2025</td>
+            <td>30</td>
+            <td><span class="badge bg-danger">Closed</span></td>
+          </tr>
+          <tr>
+            <td>Rajasthan</td>
+            <td>10 June 2025</td>
+            <td>20</td>
+            <td><span class="badge bg-success">Open</span></td>
+          </tr>
+          <tr>
+            <td>Manali</td>
+            <td>18 July 2025</td>
+            <td>28</td>
+            <td><span class="badge bg-warning text-dark">Limited</span></td>
+          </tr>
+          <tr>
+            <td>Meghalaya</td>
+            <td>5 August 2025</td>
+            <td>15</td>
+            <td><span class="badge bg-success">Open</span></td>
+          </tr>
+          <tr>
+            <td>Ooty</td>
+            <td>22 August 2025</td>
+            <td>18</td>
+            <td><span class="badge bg-warning text-dark">Limited</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="text-center my-4">
+      <button class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#makeTripModal">Make a Trip</button>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cancelTripModal">Cancel a Trip</button>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="makeTripModal" tabindex="-1" aria-labelledby="makeTripModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="makeTripModalLabel">Make a Trip</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="riderName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="riderName" required>
+            </div>
+            <div class="mb-3">
+              <label for="destinationSelect" class="form-label">Destination</label>
+              <select class="form-select" id="destinationSelect">
+                <option>Leh-Ladakh</option>
+                <option>Goa</option>
+                <option>Rajasthan</option>
+                <option>Manali</option>
+                <option>Meghalaya</option>
+                <option>Ooty</option>
+                <option>palgoan</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="riderEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="riderEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="paymentDetails" class="form-label">Payment Details</label>
+              <input type="text" class="form-control" id="paymentDetails" placeholder="Card/UPI/etc." required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Submit & Pay</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="cancelTripModal" tabindex="-1" aria-labelledby="cancelTripModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="cancelTripModalLabel">Cancel a Trip</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="cancelName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="cancelName" required>
+            </div>
+            <div class="mb-3">
+              <label for="cancelEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="cancelEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="cancelDestination" class="form-label">Destination</label>
+              <select class="form-select" id="cancelDestination">
+                <option>Leh-Ladakh</option>
+                <option>Goa</option>
+                <option>Rajasthan</option>
+                <option>Manali</option>
+                <option>Meghalaya</option>
+                <option>Ooty</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="reason" class="form-label">Reason for Cancellation</label>
+              <textarea class="form-control" id="reason" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-danger">Submit Cancellation</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="signUpName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="signUpName" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="signUpPhone" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signUpPassword" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-warning">Create Account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center my-4">
+    <h4>Loading More Rides...</h4>
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="container my-5" id="join">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://img.freepik.com/premium-photo/group-motorcycle-riders-riding-together-sunset_997657-897.jpg "
+          width="400" class="img-fluid rounded" alt="Join GearUpRiders">
+      </div>
+      <div class="col-md-6">
+        <h2>Why Join GearUpRiders?</h2>
+        <p class="fs-5">Meet fellow passionate bikers, plan trips, and make memories across India's most iconic roads.
+          Whether you're a solo adventurer or love riding in packs, we have a place for you.</p>
+        <p class="text-muted">Sign up today and rev up your riding experience!</p>
+        <a href="#signUpModal" data-bs-toggle="modal" class="btn btn-warning">Sign Up Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 GearUpRiders | Made by Riders for Riders
+  </footer>
+
+  <script>
+    // tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(tooltipTriggerEl => {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    //popovers
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    popoverTriggerList.forEach(popoverTriggerEl => {
+      new bootstrap.Popover(popoverTriggerEl);
+    });
+
+    // typeahead replacement using datalist
+    const destinations = [
+      "Leh-Ladakh",
+      "Goa Coastal Ride",
+      "Rajasthan Desert Ride",
+      "Manali Ride",
+      "Meghalaya Monsoon Trail",
+      "Ooty Hills Ride",
+      "palgoan"
+    ];
+
+    const searchInput = document.getElementById('searchDestinations');
+    
+    // Create and append datalist element
+    const dataList = document.createElement('datalist');
+    dataList.id = 'destinationsDatalist';
+    
+    // Add options to datalist
+    destinations.forEach(destination => {
+      const option = document.createElement('option');
+      option.value = destination;
+      dataList.appendChild(option);
+    });
+    
+    document.body.appendChild(dataList);
+    
+    // Connect input to datalist
+    searchInput.setAttribute('list', 'destinationsDatalist');
+    
+    // Add selection handler
+    searchInput.addEventListener('change', function() {
+      const selectedValue = this.value;
+      if (destinations.includes(selectedValue)) {
+        const card = Array.from(document.querySelectorAll('.card-title')).find(el => 
+          el.textContent.trim() === selectedValue
+        );
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.focus();
+        }
+      }
+    });
+</script>
+</body>
+
+</html>
